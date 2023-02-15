@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: #8C7C68;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: #F2E5D5;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507) ;
+
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+section#login > div#imagem{
+    display: block;
+    background:#8C7C68 url("../imagens/fundo.jpg") no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+form > div.campo{
+    background-color: #8C7C68;
+    border: 2px solid #261A0B;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+div.campo label{
+    display: none;
+}
+div.campo > i{
+    color: #F2E5D5;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #F2E5D5;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translate(0.3px, -13px);
+}
+
+ form > input[type=submit]{
+    display: block;
+    font-size: 1em; 
+    width: 100%;
+    height: 40px;
+    background-color: #261A0B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+ }
+ form > input[type=submit]:hover{
+    background-color: #8C7C68 ;
+ }
+
+ form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #261a0bda;
+    border: 1px solid #261A0B;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    padding: 5px;
+ }
+ form > a.botao:hover{
+    background-color: #8C7C68;
+ }
+ form > a.botao > i{
+    font-size: 0.8em;
+ }
